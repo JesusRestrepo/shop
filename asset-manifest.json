@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/venta/static/css/main.7a4aa019.chunk.css",
+    "main.js": "/venta/static/js/main.830dc7ec.chunk.js",
+    "main.js.map": "/venta/static/js/main.830dc7ec.chunk.js.map",
+    "runtime-main.js": "/venta/static/js/runtime-main.7b429867.js",
+    "runtime-main.js.map": "/venta/static/js/runtime-main.7b429867.js.map",
+    "static/js/2.01f4b0f2.chunk.js": "/venta/static/js/2.01f4b0f2.chunk.js",
+    "static/js/2.01f4b0f2.chunk.js.map": "/venta/static/js/2.01f4b0f2.chunk.js.map",
+    "static/js/3.9327ca32.chunk.js": "/venta/static/js/3.9327ca32.chunk.js",
+    "static/js/3.9327ca32.chunk.js.map": "/venta/static/js/3.9327ca32.chunk.js.map",
+    "index.html": "/venta/index.html",
+    "static/css/main.7a4aa019.chunk.css.map": "/venta/static/css/main.7a4aa019.chunk.css.map",
+    "static/js/2.01f4b0f2.chunk.js.LICENSE.txt": "/venta/static/js/2.01f4b0f2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7b429867.js",
+    "static/js/2.01f4b0f2.chunk.js",
+    "static/css/main.7a4aa019.chunk.css",
+    "static/js/main.830dc7ec.chunk.js"
+  ]
+}
