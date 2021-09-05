@@ -1,0 +1,30 @@
+.content{
+    border-style: solid;
+    border-color: black;
+    width: 80%;
+    margin-top: 3%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.row{
+    text-align: center;
+}
+
+.card{
+    border-style: solid;
+    border-color: black;
+}
+
+.imagen{
+    width: 80%;
+    margin-left: 10%;
+    height: 200px;
+}
+
+@media screen and (max-width:600px){
+    .content{
+        width: 100%;
+        margin-left: 0;
+    }
+}
