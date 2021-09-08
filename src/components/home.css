@@ -1,0 +1,24 @@
+.App{
+    background-color: #0f0f0f;
+}
+
+.espacio{
+    margin-top: 5%;
+}
+
+.img{
+    height: 500px;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .espacio{
+        margin-top: 15%;
+    }
+
+    .img{
+        height: auto;
+        text-align: center;
+    }
+}

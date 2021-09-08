@@ -67,6 +67,7 @@ export default function FullWidthTabs() {
 
   return (
     <React.Fragment>
+      <div className="espacio"></div>
         <div className={classes.root}>
             <AppBar position="static" color="default">
                 <Tabs
