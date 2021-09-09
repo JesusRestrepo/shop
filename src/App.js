@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-import Home from './components/Home';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+import Home from './components/Home';
 import Navbar from './components/navbar';
 import Nosotros from './components/Nosotros';
 import FullWidthTabs from './components/Products';
@@ -12,8 +12,11 @@ const App = () => {
       <BrowserRouter>
         <Navbar />
         <Switch>
+          <Redirect
+            from="/"
+            to="/home" />
           <Route
-            path="/shop/"
+            path="/shop/home"
             component={Home} />
           <Route
             path="/shop/products"
