@@ -1,23 +1,22 @@
-.App{
-    background-color: #0f0f0f;
+.imagen{
+    height: 250px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-
-.espacio{
-    margin-top: 5%;
-}
-
-.img{
-    height: 500px;
+.content{
+    border-style: solid;
+    border-color: black;
+    width: 80%;
+    margin-top: 3%;
+    height: auto;
+    margin-left: 10%;
 }
 
 
 
 @media screen and (max-width:600px) {
-    .espacio{
-        margin-top: 15%;
-    }
-
-    .img{
+    .imagen{
         height: auto;
         text-align: center;
     }
