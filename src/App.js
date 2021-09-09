@@ -12,9 +12,6 @@ const App = () => {
       <BrowserRouter>
         <Navbar />
         <Switch>
-          <Redirect
-            from="/"
-            to="/home" />
           <Route
             path="/shop/home"
             component={Home} />
