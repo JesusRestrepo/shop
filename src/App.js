@@ -1,103 +1,30 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import SwipeableViews from 'react-swipeable-views';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import './App.css'
-
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Home from './components/Home';
-import Products from './components/Products';
+
+import Navbar from './components/navbar';
 import Nosotros from './components/Nosotros';
+import FullWidthTabs from './components/Products';
 
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
+const App = () => {
   return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`full-width-tabpanel-${index}`}
-      aria-labelledby={`full-width-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box p={3}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
+    <div>
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route
+            path="/home"
+            component={Home} />
+          <Route
+            path="/products"
+            component={FullWidthTabs} />
+          <Route
+            path="/nosotros"
+            component={Nosotros} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
 
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired,
-};
-
-function a11yProps(index) {
-  return {
-    id: `full-width-tab-${index}`,
-    'aria-controls': `full-width-tabpanel-${index}`,
-  };
-}
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    backgroundColor: theme.palette.background.paper,
-    width: "fullwidth",
-  },
-}));
-
-export default function FullWidthTabs() {
-  const classes = useStyles();
-  const theme = useTheme();
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
-  const handleChangeIndex = (index) => {
-    setValue(index);
-  };
-
-  return (
-    <div className={classes.root}>
-      <AppBar position="fixed" color="default">
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor="primary"
-          textColor="primary"
-          variant="fullWidth"
-          aria-label="full width tabs example"
-        >
-          <Tab label="INICIO" {...a11yProps(0)} />
-          <Tab label="PRODUCTOS" {...a11yProps(1)} />
-          <Tab label="NOSOTROS" {...a11yProps(2)} />
-        </Tabs>
-      </AppBar>
-      <SwipeableViews
-        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-        index={value}
-        onChangeIndex={handleChangeIndex}
-      >
-        <TabPanel value={value} index={0} dir={theme.direction}>
-          <Home></Home>
-        </TabPanel>
-        <TabPanel value={value} index={1} dir={theme.direction}>
-          <Products></Products>
-        </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
-          <Nosotros></Nosotros>
-        </TabPanel>
-      </SwipeableViews>
-    </div>
-  );
-}
-
+export default App;
