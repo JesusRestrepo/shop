@@ -13,13 +13,13 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route
-            path="/home"
+            path="/shop/home"
             component={Home} />
           <Route
-            path="/products"
+            path="/shop/products"
             component={FullWidthTabs} />
           <Route
-            path="/nosotros"
+            path="/shop/nosotros"
             component={Nosotros} />
         </Switch>
       </BrowserRouter>
