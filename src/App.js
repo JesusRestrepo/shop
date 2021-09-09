@@ -13,7 +13,7 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route
-            path="/shop/home"
+            path="/shop/"
             component={Home} />
           <Route
             path="/shop/products"
