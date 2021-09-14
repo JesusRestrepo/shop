@@ -21,6 +21,7 @@ const App = () => {
           <Route
             path="/shop/nosotros"
             component={Nosotros} />
+          <Redirect to ="/shop/home" />
         </Switch>
       </BrowserRouter>
     </div>

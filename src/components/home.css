@@ -1,19 +1,26 @@
+.contenedor-principal{
+    margin-top: 10%;
+    width: 80%;
+    margin-left: 10%;
+}
+
 .imagen{
     height: 250px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.content-1{
+    text-align: center;
+}
+
+.content{
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
 }
-.content{
-    border-style: solid;
-    border-color: black;
-    width: 80%;
-    margin-top: 3%;
-    height: auto;
-    margin-left: 10%;
-}
-
-
 
 @media screen and (max-width:600px) {
     .imagen{
