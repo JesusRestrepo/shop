@@ -9,7 +9,7 @@ const Home = () => {
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src="https://miro.medium.com/max/1024/1*vxjAHkrXbGG6gOiPZgjeZA.jpeg" 
+                        <img src="https://asegurandome.com.ve/wp-content/uploads/2018/10/Tecnolog%C3%ADa-para-mejorar-la-calidad-del-servicio.jpg" 
                         className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item">
@@ -34,18 +34,27 @@ const Home = () => {
             <div className="Buttons">
                 <div className="row">
                     <div className="col">
-                        <div className="carro">
-                            carros
-                        </div>  
+                        <div className="tarjeta mt-3">
+                            <img src="https://media.revistagq.com/photos/5d89c9335d07090008d92dd6/16:9/w_2560%2Cc_limit/2020-mclaren-senna-mmp-1545234547.jpg" className="imagen-home" alt="..."/>
+                            <div className="card-body">
+                                <a className="btn btn-primary">carros</a>
+                            </div>
+                        </div>
                     </div>
                     <div className="col">
-                        <div className="moto">
-                            motos
+                        <div className="tarjeta mt-3">
+                            <img src="https://s3-eu-west-1.amazonaws.com/boxrepsol-site/uploads/00_marc_marquez_jerez_motorp_repsol_honda_rc213v.jpg" className="imagen-home" alt="..."/>
+                            <div className="card-body">
+                                <a className="btn btn-primary">motos</a>
+                            </div>
                         </div>
-                    </div>    
+                    </div>
                     <div className="col">
-                        <div className="otro">
-                            otros
+                        <div className="tarjeta mt-3">
+                            <img src="https://static3.elcorreo.com/www/multimedia/202011/04/media/cortadas/615GbEDqwQL._AC_SL1500_-kVzH-U120669777876mWF-624x385@El%20Correo.jpg" className="imagen-home" alt="..."/>
+                            <div className="card-body">
+                                <a className="btn btn-primary">otros</a>
+                            </div>
                         </div>
                     </div>
                 </div>
