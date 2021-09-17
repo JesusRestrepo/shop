@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Footer from './components/Footer';
 
 import Home from './components/Home';
@@ -10,21 +10,22 @@ import FullWidthTabs from './components/Products';
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <Switch>
-          <Route
-            path="/shop/home"
+          <Route exact
+            path="/shop/"
             component={Home} />
-          <Route
+          <Route exact
             path="/shop/products"
             component={FullWidthTabs} />
-          <Route
+          <Route exact
             path="/shop/nosotros"
             component={Nosotros} />
-          <Redirect to ="/shop/home" />
+
+          <Redirect to ="/shop" />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
 
       <Footer></Footer>
     </div>
