@@ -52,4 +52,9 @@
         height: 170px;
     }
 
+    .row{
+        display: block;
+    }
+    
+
 }

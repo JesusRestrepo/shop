@@ -9,3 +9,11 @@
     width: 100%;
 }
 
+.row{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.col{
+    text-align: center;
+}

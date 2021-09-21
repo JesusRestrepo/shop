@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="info-footer">
                     <div className="row">
                         <div className="col">
-                            aca va una cosa
+                            House Technology
                         </div>
                         <div className="col">
                             y aca otra

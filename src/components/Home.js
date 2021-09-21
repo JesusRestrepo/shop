@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import './home.css';
 
@@ -37,7 +38,7 @@ const Home = () => {
                         <div className="tarjeta mt-3">
                             <img src="https://media.revistagq.com/photos/5d89c9335d07090008d92dd6/16:9/w_2560%2Cc_limit/2020-mclaren-senna-mmp-1545234547.jpg" className="imagen-home" alt="..."/>
                             <div className="card-body">
-                                <a className="btn btn-primary">carros</a>
+                                <Link className="btn btn-primary" to={"/shop/products"} >carros</Link>
                             </div>
                         </div>
                     </div>
@@ -45,7 +46,7 @@ const Home = () => {
                         <div className="tarjeta mt-3">
                             <img src="https://s3-eu-west-1.amazonaws.com/boxrepsol-site/uploads/00_marc_marquez_jerez_motorp_repsol_honda_rc213v.jpg" className="imagen-home" alt="..."/>
                             <div className="card-body">
-                                <a className="btn btn-primary">motos</a>
+                                <Link className="btn btn-primary" to={"/shop/products"}>motos</Link>
                             </div>
                         </div>
                     </div>
@@ -53,7 +54,7 @@ const Home = () => {
                         <div className="tarjeta mt-3">
                             <img src="https://static3.elcorreo.com/www/multimedia/202011/04/media/cortadas/615GbEDqwQL._AC_SL1500_-kVzH-U120669777876mWF-624x385@El%20Correo.jpg" className="imagen-home" alt="..."/>
                             <div className="card-body">
-                                <a className="btn btn-primary">otros</a>
+                                <Link className="btn btn-primary" to={"/shop/products"}>otros</Link>
                             </div>
                         </div>
                     </div>

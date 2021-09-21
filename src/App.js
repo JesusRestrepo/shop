@@ -10,10 +10,12 @@ import Home from './components/Home';
 import Navbar from './components/navbar';
 import Nosotros from './components/Nosotros';
 import FullWidthTabs from './components/Products';
+import Cargador from './components/secundary/cargadorinalambrico';
+import Conector from './components/secundary/conectorusb';
 
 function CircularProgressWithLabel(props) {
   return (
-    <Box position="relative" display="inline-flex">
+    <Box position="relative" marginTop={"32%"} marginLeft={"50%"} marginRight={"50%"} display="inline-flex">
       <CircularProgress variant="determinate" {...props} />
       <Box
         top={0}
@@ -76,6 +78,12 @@ const App = () => {
           <Route exact
             path="/shop/nosotros"
             component={Nosotros} />
+          <Route exact
+            path="/shop/products/carro/cargador-inalambrico"
+            component={Cargador} />
+          <Route exact
+            path="/shop/products/carro/conector-usb"
+            component={Conector} />
 
           <Redirect to ="/shop" />
         </Switch>
